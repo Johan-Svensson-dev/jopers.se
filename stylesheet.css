@@ -1,0 +1,40 @@
+
+
+
+header nav ul{
+    position: absolute;
+
+    display: none;
+    padding: 0;
+   
+}
+
+header nav ul li{
+    list-style-type: none;
+}
+
+main{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+
+
+}
+
+ul#thumbs {
+    padding: 0;
+}
+
+ul#thumbs li {
+    list-style-type: none;
+    display: inline-block;
+    border: 2px solid grey;
+}
+
+ul#thumbs li img {
+    display: block; /* tar bort utrymmet i botten på bilden */
+}
+
+#largeImg{
+    width: 60%;
+}
