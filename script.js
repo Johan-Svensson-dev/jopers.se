@@ -15,24 +15,37 @@ function calc(){
 
 
 function red() {
-    let pElement = document.getElementById('p1');
-    pElement.onclick = p1Click;
+    let pRed = document.getElementById("p1");
+    pRed.onclick = toggleRed;
 
-    function p1Click() {
-        let pElement = document.getElementById('p1');
-        pElement.style.color = "red";
-    }
 }
+
+function toggleRed() {
+    let pRed = document.getElementById("p1");
+    if (pRed.style.color == "red") {
+        pRed.style.color = "black";
+    }
+    else {
+        pRed.style.color = "red";
+    }
+  
+    }   
+
+
 
 
 function stark() {
     let pStrong = document.getElementById('p2');
-    pStrong.onclick = makeStrong;
+    pStrong.onclick = toggleBold;
 }
 
-function makeStrong() {
-    let pStrong = document.getElementById('p2');
-    pStrong.style.fontWeight = "bold";
+function toggleBold() {
+    let pStrong  = document.getElementById('p2');
+    if (pStrong.style.fontWeight == "bold") {
+        pStrong.style.fontWeight = "normal";
+    } else {
+        pStrong.style.fontWeight = "bold";
+    }
 }
 
 let showMenu = true
@@ -52,12 +65,9 @@ function showHideMenu() {
     showMenu = !showMenu;
 }
 
-function initPage() {
-    init();
-    red();
-    menu();
-    stark();
-}
+function 
+
+
 
 window.addEventListener('load', init);
 window.addEventListener('load', red);

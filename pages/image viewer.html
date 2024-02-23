@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms</title>
+    <title>Image viewer</title>
     <link rel="stylesheet" href="../stylesheet.css">
     <script src="../script.js"></script>
 </head>
-
 <body>
+
     <header>
         <nav>
             <a id="topMenuButton" href="#">☰</a>
@@ -21,21 +20,16 @@
             </ul>
         </nav>
     </header>
-
     <main>
-        <form id="calcform">
-            <fieldset>
-                <legend>Kalkylator</legend>
-                <input type="number" id="x"> +
-                <input type="number" id="y"> =
-                <output id="sum"></output>
+        <section id="imgViewer">
+            <img src="../img/farmerstor.png"  id="largeImg">
+            <ul id="thumbs">
+                <li><img src="../img/farmerliten.png" alt=""></li>
+                <li><img src="../img/piratliten.png" alt=""></li>
+            </ul>
 
-            </fieldset>
-        </form>
+        </section>
     </main>
-
-
-
+    
 </body>
-
 </html>
