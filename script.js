@@ -65,7 +65,22 @@ function showHideMenu() {
     showMenu = !showMenu;
 }
 
-function 
+function imgViewer(){
+    let element = document.getElementById('thumbs'); 
+    let imgList = element.getElementsByTagName('img')
+        for(let i = 0; i < imgList.length; i++){
+            imgList[i].onmouseover = overImg;
+            }
+        }
+
+function overImg(e){
+    let element = document.getElementById('largeImg');
+    let imgPath = e.target.src.split("_")[0] + ".png";
+
+    element.src = imgPath;
+}
+    
+
 
 
 
@@ -73,6 +88,7 @@ window.addEventListener('load', init);
 window.addEventListener('load', red);
 window.addEventListener('load', menu);
 window.addEventListener('load', stark);
+window.addEventListener('load', imgViewer);
 
 
 
